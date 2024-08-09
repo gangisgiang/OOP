@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwinAdventure", "SwinAdventure\SwinAdventure.csproj", "{E6C7E1CF-64EA-4616-9A0D-C9E273ECC969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwinTest", "Sw\SwinTest.csproj", "{3E8C5F98-0CF9-4229-91A2-16B2666C746A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6C7E1CF-64EA-4616-9A0D-C9E273ECC969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C7E1CF-64EA-4616-9A0D-C9E273ECC969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C7E1CF-64EA-4616-9A0D-C9E273ECC969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C7E1CF-64EA-4616-9A0D-C9E273ECC969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8C5F98-0CF9-4229-91A2-16B2666C746A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8C5F98-0CF9-4229-91A2-16B2666C746A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8C5F98-0CF9-4229-91A2-16B2666C746A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8C5F98-0CF9-4229-91A2-16B2666C746A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
