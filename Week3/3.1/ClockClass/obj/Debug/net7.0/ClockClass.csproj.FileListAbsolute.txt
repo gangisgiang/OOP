@@ -1,0 +1,15 @@
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/bin/Debug/net7.0/ClockClass
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/bin/Debug/net7.0/ClockClass.deps.json
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/bin/Debug/net7.0/ClockClass.runtimeconfig.json
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/bin/Debug/net7.0/ClockClass.dll
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/bin/Debug/net7.0/ClockClass.pdb
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.csproj.AssemblyReference.cache
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.AssemblyInfoInputs.cache
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.AssemblyInfo.cs
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.csproj.CoreCompileInputs.cache
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.dll
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/refint/ClockClass.dll
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.pdb
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ClockClass.genruntimeconfig.cache
+/Users/guest1/Documents/OOP/Week3/3.1/ClockClass/obj/Debug/net7.0/ref/ClockClass.dll
