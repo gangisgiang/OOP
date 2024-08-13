@@ -9,11 +9,6 @@ namespace ShapeDrawer
 		private int _width, _height;
         private bool _selected;
 
-        public  bool Selected {
-            get { return _selected; }
-            set { _selected = value; }
-        }
-
 		public Shape(int param)
 		{
 			_color = Color.Chocolate;

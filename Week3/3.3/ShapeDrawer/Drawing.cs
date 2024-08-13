@@ -24,18 +24,19 @@ namespace ShapeDrawer
             
         }
 
-        public SelectedShape 
+        public List<Shape> SelectedShapes 
         {
             get 
             {
+                List<Shape> result = new List<Shape>();
                 foreach (Shape s in _shapes) 
                 {
                     if (s.Selected) 
                     {
-                        return s;
+                        result.Add(s);
                     }
                 }
-                return null;
+                return result;
             }
         }
 
