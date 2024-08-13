@@ -46,7 +46,6 @@ namespace ShapeDrawer
             }
 
             while (!window.CloseRequested);
-
             
         }
     }
