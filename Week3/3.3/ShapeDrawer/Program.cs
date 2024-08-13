@@ -1,7 +1,7 @@
 using System;
 using SplashKitSDK;
 
-namespace _3_3
+namespace ShapeDrawer
 {
     public class Program
     {

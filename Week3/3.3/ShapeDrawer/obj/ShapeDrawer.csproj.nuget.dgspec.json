@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/guest1/Documents/OOP/Week3/3.3/_3_3.csproj": {}
+    "/Users/guest1/Documents/OOP/Week3/3.3/ShapeDrawer/ShapeDrawer.csproj": {}
   },
   "projects": {
-    "/Users/guest1/Documents/OOP/Week3/3.3/_3_3.csproj": {
+    "/Users/guest1/Documents/OOP/Week3/3.3/ShapeDrawer/ShapeDrawer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/guest1/Documents/OOP/Week3/3.3/_3_3.csproj",
-        "projectName": "_3_3",
-        "projectPath": "/Users/guest1/Documents/OOP/Week3/3.3/_3_3.csproj",
+        "projectUniqueName": "/Users/guest1/Documents/OOP/Week3/3.3/ShapeDrawer/ShapeDrawer.csproj",
+        "projectName": "ShapeDrawer",
+        "projectPath": "/Users/guest1/Documents/OOP/Week3/3.3/ShapeDrawer/ShapeDrawer.csproj",
         "packagesPath": "/Users/guest1/.nuget/packages/",
-        "outputPath": "/Users/guest1/Documents/OOP/Week3/3.3/obj/",
+        "outputPath": "/Users/guest1/Documents/OOP/Week3/3.3/ShapeDrawer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/guest1/.nuget/NuGet/NuGet.Config"
