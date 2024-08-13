@@ -45,11 +45,6 @@ namespace ShapeDrawer
             get { return _shapes.Count; }
         }
 
-        public void AddShape(Shape s) 
-        {
-            _shapes.Add(s);
-        }
-
         public void Draw() 
         {
             SplashKit.ClearScreen(_background);
@@ -57,6 +52,19 @@ namespace ShapeDrawer
             {
                 s.Draw();
             }
+        }
+
+        public void SelectShapesAt (Point2D pt) 
+        {
+            foreach (Shape s in _shapes)
+            {
+                s.Selected = s.IsAt(pt);
+            }
+        }
+
+        public void AddShape(Shape s) 
+        {
+            _shapes.Add(s);
         }
 
         public void RemoveShape(Shape s) 
