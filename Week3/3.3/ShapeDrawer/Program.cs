@@ -22,7 +22,7 @@ namespace ShapeDrawer
                     myDrawing.AddShape(newShape);
                 }
 
-                if (SplashKit.KeyTyped(KeyCode.RightButton))
+                if (SplashKit.MouseClicked(MouseButton.RightButton))
                 {
                     Point2D pt = SplashKit.MousePosition();
                     myDrawing.SelectShapesAt(pt);
@@ -33,7 +33,7 @@ namespace ShapeDrawer
                     myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
 
-                if (SplashKit.KeyTyped(KeyCode.DeleteKey)) || if (SplashKit.KeyTyped(KeyCode.BackspaceKey))
+                if (SplashKit.KeyTyped(KeyCode.DeleteKey) || SplashKit.KeyTyped(KeyCode.BackspaceKey))
                 {
                     foreach (Shape s in myDrawing.SelectedShapes)
                     {
@@ -46,7 +46,7 @@ namespace ShapeDrawer
             }
 
             while (!window.CloseRequested);
-            
+
         }
     }
 }
