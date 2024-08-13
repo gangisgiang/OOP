@@ -33,6 +33,14 @@ namespace ShapeDrawer
                     myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
 
+                if (SplashKit.KeyTyped(KeyCode.DeleteKey)) || if (SplashKit.KeyTyped(KeyCode.BackspaceKey))
+                {
+                    foreach (Shape s in myDrawing.SelectedShapes)
+                    {
+                        myDrawing.RemoveShape(s);
+                    }
+                }
+
                 myDrawing.Draw();
                 SplashKit.RefreshScreen();
             }
