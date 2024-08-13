@@ -25,6 +25,10 @@ namespace ShapeDrawer
 
 		public void Draw()
 		{
+			if (_selected)
+			{
+				DrawOutline();
+			}
 			SplashKit.FillRectangle(_color, _x, _y, _width, _height);
 		}
 
@@ -58,12 +62,10 @@ namespace ShapeDrawer
 			set { _height = value; }
 		}
 
-        public DrawOutline()
+        public void DrawOutline()
         {
-            if (_selected)
-            {
-                SplashKit.DrawRectangle(Color.Black, _x, _y, _width, _height);
-            }
+			int value = 5;
+			SplashKit.FillRectangle(Color.Black, _x - value, _y - value, _width + value * 2, _height + value * 2);
         }
 	}
 }

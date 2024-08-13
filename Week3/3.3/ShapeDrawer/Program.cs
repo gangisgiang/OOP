@@ -22,12 +22,16 @@ namespace ShapeDrawer
                     myDrawing.AddShape(newShape);
                 }
 
+                if (SplashKit.KeyTyped(KeyCode.RightButton))
+                {
+                    Point2D pt = SplashKit.MousePosition();
+                    myDrawing.SelectShapesAt(pt);
+                }
+
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                 {
                     myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
-
-                
 
                 SplashKit.RefreshScreen();
             }
