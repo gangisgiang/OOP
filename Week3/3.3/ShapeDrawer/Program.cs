@@ -16,12 +16,15 @@ namespace ShapeDrawer
 
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
-                    
+                    Shape newShape = new Shape(110);
+                    newShape.X = SplashKit.MouseX();
+                    newShape.Y = SplashKit.MouseY();
+                    myDrawing.AddShape(newShape);
                 }
 
                 if (SplashKit.KeyTyped(KeyCode.SpaceKey))
                 {
-                    
+                    myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
 
                 
