@@ -33,6 +33,7 @@ namespace ShapeDrawer
                     myDrawing.Background = SplashKit.RandomRGBColor(255);
                 }
 
+                myDrawing.Draw();
                 SplashKit.RefreshScreen();
             }
 
