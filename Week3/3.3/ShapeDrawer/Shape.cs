@@ -65,8 +65,8 @@ namespace ShapeDrawer
 
 	        public void DrawOutline()
 	        {
-				int value = 5;
-				SplashKit.FillRectangle(Color.Black, _x - value, _y - value, _width + value * 2, _height + value * 2);
+			int value = 5;
+			SplashKit.FillRectangle(Color.Black, _x - value, _y - value, _width + value * 2, _height + value * 2);
 	        }
 	}
 }
