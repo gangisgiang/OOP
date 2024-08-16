@@ -7,6 +7,15 @@ namespace ShapeDrawing
         private int _width, _height;
         private Color _color;
         private float _x, _y;
+        
+        public MyRectangle()
+        {
+            _width = 110;
+            _height = 110;
+            _color = Color.Chocolate;
+            _x = 0.0f;
+            _y = 0.0f;
+        }
 
         public MyRectangle(int width, int height, Color color, float x, float y)
         {

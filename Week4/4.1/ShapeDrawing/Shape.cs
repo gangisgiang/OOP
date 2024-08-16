@@ -2,78 +2,81 @@ using SplashKitSDK;
 
 namespace ShapeDrawer
 {
-    public class Shape
-    {
-        private Color _color;
-        private float _x, _y;
-        private int _width, _height;
+	public class Shape
+	{
+		private Color _color;
+		private float _x, _y;
+		private int _width, _height;
         private bool _selected;
 
-        public Shape(int param)
-        {
-            _color = Color.Chocolate;
-            _x = 0.0f;
-            _y = 0.0f;
-            _width = param;
-            _height = param;
-        }
+		public Shape()
+		{
+			_color = Color.Chocolate;
+			_x = 0.0f;
+			_y = 0.0f;
+			_width = 110;
+			_height = 110;
+		}
 
-        public bool Selected
-        {
-            get { return _selected; }
-            set { _selected = value; }
-        }
+		public Shape(Color color)
+		{
+			_color = color;
+			_x = 0.0f;
+			_y = 0.0f;
+			_width = 110;
+			_height = 110;
+		}
 
-        public void Draw()
-        {
-            if (_selected)
-            {
-                DrawOutline();
-            }
-            SplashKit.FillRectangle(_color, _x, _y, _width, _height);
-        }
+        	public bool Selected 
+		{
+            		get { return _selected; }
+            		set { _selected = value; }
+        	}
 
-        public bool IsAt(Point2D pt)
-        {
-            return (pt.X >= _x && pt.X <= _x + _width)
-                && (pt.Y >= _y && pt.Y <= _y + _height);
-        }
+		public void Draw()
+		{
+			if (_selected)
+			{
+				DrawOutline();
+			}
+			SplashKit.FillRectangle(_color, _x, _y, _width, _height);
+		}
 
-        public Color Color
-        {
-            get { return _color; }
-            set { _color = value; }
-        }
+		public bool IsAt(Point2D pt)
+		{
+			return (pt.X >= _x && pt.X <= _x + _width) && (pt.Y >= _y && pt.Y <= _y + _height);
+		}
 
-        public float X
-        {
-            get { return _x; }
-            set { _x = value; }
-        }
+		public Color Color {
+			get { return _color; }
+			set { _color = value; }
+		}
 
-        public float Y
-        {
-            get { return _y; }
-            set { _y = value; }
-        }
+		public float X {
+			get { return _x; }
+			set { _x = value; }
+		}
 
-        public int Width
-        {
-            get { return _width; }
-            set { _width = value; }
-        }
+		public float Y {
+			get { return _y; }
+			set { _y = value; }
+		}
 
-        public int Height
-        {
-            get { return _height; }
-            set { _height = value; }
-        }
+		public int Width {
+			get { return _width; }
+			set { _width = value; }
+		}
 
-        public void DrawOutline()
-        {
-            int value = 5;
-            SplashKit.FillRectangle(Color.Black, _x - value, _y - value,
-                                    _width + value * 2, _height + value * 2);
-        }
-    }
+		public int Height {
+			get { return _height; }
+			set { _height = value; }
+		}
+
+	        public void DrawOutline()
+	        {
+			int value = 5;
+			SplashKit.FillRectangle(Color.Black, _x - value, _y - value, _width + value * 2, _height + value * 2);
+	        }
+	}
 }
+
