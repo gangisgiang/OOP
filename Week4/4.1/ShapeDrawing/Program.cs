@@ -15,8 +15,8 @@ namespace ShapeDrawing
         public static void Main()
         {
             
-            private ShapeKind kindToAdd = ShapeKind.Rectangle;
-            
+            private ShapeKind kindToAdd = ShapeKind.Circle;
+
             Window window = new Window("Shape Drawing", 800, 600);
             Drawing myDrawing = new Drawing();
             do
@@ -24,9 +24,30 @@ namespace ShapeDrawing
                 SplashKit.ProcessEvents();
                 SplashKit.ClearScreen();
 
+                if (SplashKit.KeyTyped(KeyCode.RKey))
+                {
+                    kindToAdd = ShapeKind.Rectangle;
+                }
+
+                if (SplashKit.KeyTyped(KeyCode.CKey))
+                {
+                    kindToAdd = ShapeKind.Circle;
+                }
+
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
-                    Shape newShape = new MyRectangle(110);
+                    Shape newShape;
+
+                    switch (kindToAdd)
+                    {
+                        case ShapeKind.Circle:
+                            newShape = new MyCircle();
+                            break;
+
+                        default:
+                            newShape = new MyRectangle();
+                            break;
+                    }
 
                     newShape.X = SplashKit.MouseX();
                     newShape.Y = SplashKit.MouseY();
