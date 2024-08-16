@@ -2,7 +2,7 @@ using SplashKitSDK;
 
 namespace ShapeDrawing
 {
-    public class Drawing 
+    public class Drawing
     {
         private readonly List<Shape> _shapes;
         private Color _background;
