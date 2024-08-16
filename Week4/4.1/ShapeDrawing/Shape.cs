@@ -1,6 +1,6 @@
 using SplashKitSDK;
 
-namespace ShapeDrawer
+namespace ShapeDrawing
 {
 	public class Shape
 	{
