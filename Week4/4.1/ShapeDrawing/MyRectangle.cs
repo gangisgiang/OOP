@@ -1,13 +1,14 @@
 using System;
+using ShapeDrawing;
+using SplashKitSDK;
+
 namespace ShapeDrawing
 {
-	public class MyRectangle : Shape
-	{
+    public class MyRectangle : Shape
+    {
 
         private int _width, _height;
-        private Color _color;
-        private float _x, _y;
-        
+
         public MyRectangle()
         {
             _width = 110;
@@ -38,23 +39,23 @@ namespace ShapeDrawing
             set { _height = value; }
         }
 
-        public void Draw()
+        public override void Draw()
         {
             SplashKit.FillRectangle(_color, _x, _y, _width, _height);
         }
 
-        public void DrawOutline()
+        public override void DrawOutline()
         {
             int value = 5;
             SplashKit.FillRectangle(Color.Black, _x - value, _y - value,
                                     _width + value * 2, _height + value * 2);
         }
 
-        public bool IsAt(Point2D pt)
+        public override bool IsAt(Point2D pt)
         {
             return (pt.X >= _x && pt.X <= _x + _width)
                 && (pt.Y >= _y && pt.Y <= _y + _height);
         }
-	}
+    }
 }
 

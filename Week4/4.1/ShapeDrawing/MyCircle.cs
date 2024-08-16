@@ -6,6 +6,14 @@ namespace ShapeDrawing
 
         private int _radius;
 
+        public MyCircle()
+        {
+            _radius = 110;
+            _color = Color.Chocolate;
+            _x = 0.0f;
+            _y = 0.0f;
+        }
+
         public MyCircle(int radius, Color color, float x, float y)
         {
             _radius = radius;
@@ -22,20 +30,18 @@ namespace ShapeDrawing
 
         public void Draw()
         {
-            SplashKit.FillRectangle(_color, _x, _y, _width, _height);
+            SplashKit.FillCircle(_color, _x, _y, _radius);
         }
 
         public void DrawOutline()
         {
             int value = 5;
-            SplashKit.FillRectangle(Color.Black, _x - value, _y - value,
-                                    _width + value * 2, _height + value * 2);
+            SplashKit.FillCircle(Color.Black, _x, _y, _radius + value);
         }
 
         public bool IsAt(Point2D pt)
         {
-            return (pt.X >= _x && pt.X <= _x + _width)
-                && (pt.Y >= _y && pt.Y <= _y + _height);
+            return SplashKit.PointInCircle(pt, _x, _y, _radius);
         }
 	}
 }

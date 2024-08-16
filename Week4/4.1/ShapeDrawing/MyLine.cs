@@ -17,16 +17,16 @@ namespace ShapeDrawing
             _y = y;
         }
 
-        public int Width
+        public float EndX
         {
-            get { return _width; }
-            set { _width = value; }
+            get { return _endX; }
+            set { _endX = value; }
         }
 
-        public int Height
+        public float EndY
         {
-            get { return _height; }
-            set { _height = value; }
+            get { return _endY; }
+            set { _endY = value; }
         }
 
         public void Draw()
