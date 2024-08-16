@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/ShapeDrawing.csproj",
+      "projectUniqueName": "/Users/guest1/Documents/GitHub/OOP/Week4/4.1/ShapeDrawing/ShapeDrawing.csproj",
       "projectName": "ShapeDrawing",
-      "projectPath": "/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/ShapeDrawing.csproj",
+      "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.1/ShapeDrawing/ShapeDrawing.csproj",
       "packagesPath": "/Users/guest1/.nuget/packages/",
-      "outputPath": "/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/",
+      "outputPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.1/ShapeDrawing/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/guest1/.nuget/NuGet/NuGet.Config"
