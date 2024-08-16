@@ -6,19 +6,13 @@ namespace ShapeDrawing
 {
     public class MyRectangle : Shape
     {
-
         private int _width, _height;
 
-        public MyRectangle()
+        public MyRectangle() : this(110, 110, Color.Green, 0.0f, 0.0f)
         {
-            _width = 110;
-            _height = 110;
-            _color = Color.Chocolate;
-            _x = 0.0f;
-            _y = 0.0f;
         }
 
-        public MyRectangle(int width, int height, Color color, float x, float y)
+        public MyRectangle(int width, int height, Color color, float x, float y) : base(color)
         {
             _width = width;
             _height = height;
@@ -41,12 +35,17 @@ namespace ShapeDrawing
 
         public override void Draw()
         {
+            if (_selected)
+            {
+                DrawOutline();
+            }
+
             SplashKit.FillRectangle(_color, _x, _y, _width, _height);
         }
 
         public override void DrawOutline()
         {
-            int value = 5;
+            int value = 2;
             SplashKit.FillRectangle(Color.Black, _x - value, _y - value,
                                     _width + value * 2, _height + value * 2);
         }

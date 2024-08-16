@@ -1,25 +1,21 @@
 using System;
+using SplashKitSDK;
+
 namespace ShapeDrawing
 {
-	public class MyCircle : Shape
-	{
+    public class MyCircle : Shape
+    {
 
         private int _radius;
 
-        public MyCircle()
+        public MyCircle() : this(61, Color.Blue)
         {
-            _radius = 110;
-            _color = Color.Chocolate;
-            _x = 0.0f;
-            _y = 0.0f;
         }
 
-        public MyCircle(int radius, Color color, float x, float y)
+        public MyCircle(int radius, Color color) : base(color)
         {
             _radius = radius;
             _color = color;
-            _x = x;
-            _y = y;
         }
 
         public int Radius
@@ -28,21 +24,26 @@ namespace ShapeDrawing
             set { _radius = value; }
         }
 
-        public void Draw()
+        public override void Draw()
         {
-            SplashKit.FillCircle(_color, _x, _y, _radius);
+            if (_selected)
+            {
+                DrawOutline();
+            }
+
+            SplashKit.FillCircle(Color, _x, _y, _radius);
         }
 
-        public void DrawOutline()
+        public override void DrawOutline()
         {
-            int value = 5;
+            int value = 2;
             SplashKit.FillCircle(Color.Black, _x, _y, _radius + value);
         }
 
-        public bool IsAt(Point2D pt)
+        public override bool IsAt(Point2D pt)
         {
-            return SplashKit.PointInCircle(pt, _x, _y, _radius);
+            return SplashKit.PointInCircle(pt.X, pt.Y, _x, _y, _radius);
         }
-	}
+    }
 }
-
+    
