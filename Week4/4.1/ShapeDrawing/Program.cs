@@ -5,8 +5,18 @@ namespace ShapeDrawing
 {
     public class Program
     {
+
+        private enum ShapeKind
+        {
+            Rectangle,
+            Circle
+        }
+
         public static void Main()
         {
+            
+            private ShapeKind kindToAdd = ShapeKind.Rectangle;
+            
             Window window = new Window("Shape Drawing", 800, 600);
             Drawing myDrawing = new Drawing();
             do
@@ -16,9 +26,11 @@ namespace ShapeDrawing
 
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
-                    Shape newShape = new Shape(110);
+                    Shape newShape = new MyRectangle(110);
+
                     newShape.X = SplashKit.MouseX();
                     newShape.Y = SplashKit.MouseY();
+
                     myDrawing.AddShape(newShape);
                 }
 
