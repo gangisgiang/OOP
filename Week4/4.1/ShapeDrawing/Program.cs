@@ -15,7 +15,7 @@ namespace ShapeDrawing
         public static void Main()
         {
             
-            private ShapeKind kindToAdd = ShapeKind.Circle;
+            ShapeKind kindToAdd = ShapeKind.Circle;
 
             Window window = new Window("Shape Drawing", 800, 600);
             Drawing myDrawing = new Drawing();
