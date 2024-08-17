@@ -42,7 +42,7 @@ namespace ShapeDrawing
 
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
-                    Shape newShape;
+                    Shape newShape = null;
 
                     switch (kindToAdd)
                     {
@@ -51,11 +51,10 @@ namespace ShapeDrawing
                             break;
 
                         case ShapeKind.Line:
-                            if (myDrawing.ShapeCount >= 4)
+                            if (myDrawing.ShapeCount < 5)
                             {
-                                break;
+                                newShape = new MyLine();
                             }
-                            newShape = new MyLine();
                             break;
 
                         default:
@@ -63,10 +62,12 @@ namespace ShapeDrawing
                             break;
                     }
 
-                    newShape.X = SplashKit.MouseX();
-                    newShape.Y = SplashKit.MouseY();
-
-                    myDrawing.AddShape(newShape);
+                    if (newShape != null)
+                    {
+                        newShape.X = SplashKit.MouseX();
+                        newShape.Y = SplashKit.MouseY();
+                        myDrawing.AddShape(newShape);
+                    }
                 }
 
                 if (SplashKit.MouseClicked(MouseButton.RightButton))
