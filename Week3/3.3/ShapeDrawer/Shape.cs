@@ -7,7 +7,7 @@ namespace ShapeDrawer
 		private Color _color;
 		private float _x, _y;
 		private int _width, _height;
-        	private bool _selected;
+        private bool _selected;
 
 		public Shape(int param)
 		{
@@ -63,11 +63,11 @@ namespace ShapeDrawer
 			set { _height = value; }
 		}
 
-	        public void DrawOutline()
-	        {
+		public void DrawOutline()
+		{
 			int value = 5;
 			SplashKit.FillRectangle(Color.Black, _x - value, _y - value, _width + value * 2, _height + value * 2);
-	        }
+		}
 	}
 }
 
