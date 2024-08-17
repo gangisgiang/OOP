@@ -9,7 +9,8 @@ namespace ShapeDrawing
         private enum ShapeKind
         {
             Rectangle,
-            Circle
+            Circle,
+            Line
         }
 
         public static void Main()
@@ -34,6 +35,11 @@ namespace ShapeDrawing
                     kindToAdd = ShapeKind.Circle;
                 }
 
+                if (SplashKit.KeyTyped(KeyCode.LKey))
+                {
+                    kindToAdd = ShapeKind.Line;
+                }
+
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
                     Shape newShape;
@@ -42,6 +48,14 @@ namespace ShapeDrawing
                     {
                         case ShapeKind.Circle:
                             newShape = new MyCircle();
+                            break;
+
+                        case ShapeKind.Line:
+                            if (myDrawing.ShapeCount >= 4)
+                            {
+                                break;
+                            }
+                            newShape = new MyLine();
                             break;
 
                         default:

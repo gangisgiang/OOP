@@ -1,20 +1,22 @@
 using System;
+using SplashKitSDK;
+
 namespace ShapeDrawing
 {
-	public class MyLine : Shape
-	{
+    public class MyLine : Shape
+    {
 
         private float _endX, _endY;
 
-        public MyLine(float startX, float startY, float endX, float endY,  Color color, float x, float y)
+        public MyLine() : this(Color.Red, 300, 300)
         {
-            _startX = startX;
-            _startY = startY;
+        }
+
+        public MyLine(Color color, float endX, float endY) : base(color)
+        {
             _endX = endX;
             _endY = endY;
             _color = color;
-            _x = x;
-            _y = y;
         }
 
         public float EndX
@@ -29,23 +31,27 @@ namespace ShapeDrawing
             set { _endY = value; }
         }
 
-        public void Draw()
+        public override void Draw()
         {
-            SplashKit.FillRectangle(_color, _x, _y, _width, _height);
+            if (_selected)
+            {
+                DrawOutline();
+            }
+
+            SplashKit.DrawLine(_color, X, Y, _endX, _endY);
         }
 
-        public void DrawOutline()
+        public override void DrawOutline()
         {
-            int value = 5;
-            SplashKit.FillRectangle(Color.Black, _x - value, _y - value,
-                                    _width + value * 2, _height + value * 2);
+            int value = 2;
+            SplashKit.FillCircle(Color.Black, X, Y, value);
+            SplashKit.FillCircle(Color.Black, _endX, _endY, value);
         }
 
-        public bool IsAt(Point2D pt)
+        public override bool IsAt(Point2D pt)
         {
-            return (pt.X >= _x && pt.X <= _x + _width)
-                && (pt.Y >= _y && pt.Y <= _y + _height);
+            Line line = SplashKit.LineFrom(X, Y, _endX, _endY);
+            return SplashKit.PointOnLine(pt, line);
         }
-	}
+    }
 }
-
