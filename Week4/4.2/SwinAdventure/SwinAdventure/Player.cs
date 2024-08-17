@@ -9,8 +9,20 @@ namespace SwinAdventure
         {
             _inventory = new Inventory();
         }
-		{
-		}
+
+        public GameObject Locate(string id)
+        {
+            if AreYou(id)
+            {
+                return this;
+            }
+            else
+            {
+                return _inventory.Fetch(id);
+            }
+        }
+
+        public 
 	}
 }
 
