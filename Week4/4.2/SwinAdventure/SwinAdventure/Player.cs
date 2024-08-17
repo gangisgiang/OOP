@@ -22,7 +22,13 @@ namespace SwinAdventure
             }
         }
 
-        public 
+        public override string FullDescription
+        {
+            get
+            {
+                return "You are carrying:\n" + _inventory.ItemList;
+            }
+        }
 	}
 }
 
