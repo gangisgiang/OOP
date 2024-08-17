@@ -3,11 +3,11 @@ namespace SwinAdventure
 {
 	public class Item : GameObject
 	{
-		public Item(string[] idents, string name, string desc) : base(ids)
+		public Item(string[] idents, string name, string desc) : base(idents, name, desc)
         {
             _name = name;
             _description = desc;
-            foreach (string id in ids)
+            foreach (string id in idents)
             {
                 AddIdentifier(id);
             }
