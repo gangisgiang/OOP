@@ -22,14 +22,15 @@ public class InventoryTest
     public void FindItem()
     {
         _inventory.Put(_item);
-        Assert.AreEqual(_item, _inventory.Fetch("id1"));
-        Assert.AreEqual(_item, _inventory.Fetch("id2"));
+        Assert.IsTrue(_inventory.HasItem("id1"));
+        Assert.IsTrue(_inventory.HasItem("id2"));   
     }
 
     [Test]
     public void NoItemFound()
     {
-        Assert.AreEqual(null, _inventory.Fetch("id1"));
+        Assert.IsFalse(_inventory.HasItem("id1"));
+        Assert.IsFalse(_inventory.HasItem("id2"));
     }
 
     [Test]
