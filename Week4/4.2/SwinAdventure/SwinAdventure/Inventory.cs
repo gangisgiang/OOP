@@ -59,15 +59,13 @@ namespace SwinAdventure
                 string result = "";
                 foreach (Item item in _items)
                 {
-                    result += "\t" + "a" + item.Name + " (" +
+                    result += "\t" + "a " + item.Name + " (" +
                                 item.FirstId + ")\n\t" +
                                 item.ShortDescription + "\n";
                 }
                 return result;
             }
-
         }
 
     }
 }
-

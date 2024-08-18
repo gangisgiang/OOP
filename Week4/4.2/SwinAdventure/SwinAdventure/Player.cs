@@ -12,7 +12,7 @@ namespace SwinAdventure
 
         public GameObject Locate(string id)
         {
-            if AreYou(id)
+            if (AreYou(id))
             {
                 return this;
             }

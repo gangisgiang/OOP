@@ -23,7 +23,7 @@ public class InventoryTest
     {
         _inventory.Put(_item);
         Assert.IsTrue(_inventory.HasItem("id1"));
-        Assert.IsTrue(_inventory.HasItem("id2"));   
+        Assert.IsTrue(_inventory.HasItem("id2"));
     }
 
     [Test]
@@ -54,6 +54,6 @@ public class InventoryTest
     public void ItemList()
     {
         _inventory.Put(_item);
-        Assert.AreEqual("\ta name (id1)\n\ta name (id2)\n", _inventory.ItemList);
+        Assert.AreEqual("\ta name (id1)\n\tdesc\n", _inventory.ItemList);
     }
 }
