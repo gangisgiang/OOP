@@ -54,6 +54,6 @@ public class InventoryTest
     public void ItemList()
     {
         _inventory.Put(_item);
-        Assert.AreEqual("\tname (id1)\n\tdesc\n", _inventory.ItemList);
+        Assert.AreEqual("\ta name (id1)\n\ta name (id2)\n", _inventory.ItemList);
     }
 }
