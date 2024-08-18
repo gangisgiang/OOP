@@ -1,4 +1,7 @@
-﻿using SwinAdventure;
+﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using SwinAdventure;
 
 namespace ItemTests;
 

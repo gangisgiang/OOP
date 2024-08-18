@@ -1,13 +1,21 @@
 using System;
 namespace SwinAdventure
 {
-	public class Player : GameObject
-	{
+    public class Player : GameObject
+    {
         private Inventory _inventory;
 
-		public Player(string name, string desc) : base(new string[] {"me", "inventory"}, name, desc)
+        public Player(string name, string desc) : base(new string[] { "me", "inventory" }, name, desc)
         {
             _inventory = new Inventory();
+        }
+
+        public Inventory Inventory
+        {
+            get
+            {
+                return _inventory;
+            }
         }
 
         public GameObject Locate(string id)
@@ -26,9 +34,13 @@ namespace SwinAdventure
         {
             get
             {
-                return "You are carrying:\n" + _inventory.ItemList;
+                string result = "You are " + Name +
+                                " the " + ShortDescription +
+                                ". You are carrying:\n";
+                result += _inventory.ItemList;
+                return result;
             }
         }
-	}
+    }
 }
 

@@ -7,7 +7,6 @@ namespace InventoryTests;
 
 public class InventoryTest
 {
-
     private Inventory _inventory;
     private Item _item;
 
