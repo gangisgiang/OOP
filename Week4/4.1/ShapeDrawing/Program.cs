@@ -20,6 +20,7 @@ namespace ShapeDrawing
 
             Window window = new Window("Shape Drawing", 800, 600);
             Drawing myDrawing = new Drawing();
+            int lines = 0;
             do
             {
                 SplashKit.ProcessEvents();
@@ -51,9 +52,15 @@ namespace ShapeDrawing
                             break;
 
                         case ShapeKind.Line:
-                            if (myDrawing.ShapeCount < 5)
+                            if (lines < 5)
                             {
-                                newShape = new MyLine();
+                                MyLine myLine = new MyLine();
+                                myLine.X = SplashKit.MouseX();
+                                myLine.Y = SplashKit.MouseY();
+                                myLine.EndX = myLine.X + 110;
+                                myLine.EndY = myLine.Y;
+                                myDrawing.AddShape(myLine);
+                                lines++;
                             }
                             break;
 

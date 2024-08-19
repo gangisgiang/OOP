@@ -8,12 +8,14 @@ namespace ShapeDrawing
 
         private float _endX, _endY;
 
-        public MyLine() : this(Color.Red, 300, 300)
+        public MyLine() : this(Color.Red, 0, 0, 0, 0)
         {
         }
 
-        public MyLine(Color color, float endX, float endY) : base(color)
+        public MyLine(Color color, float startX, float startY, float endX, float endY) : base(color)
         {
+            startX = X;
+            startY = Y;
             _endX = endX;
             _endY = endY;
             _color = color;
@@ -43,7 +45,7 @@ namespace ShapeDrawing
 
         public override void DrawOutline()
         {
-            int value = 2;
+            int value = 5;
             SplashKit.FillCircle(Color.Black, X, Y, value);
             SplashKit.FillCircle(Color.Black, _endX, _endY, value);
         }
