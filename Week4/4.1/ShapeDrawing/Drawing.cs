@@ -9,6 +9,8 @@ namespace ShapeDrawing
 
         public Color Background 
         {
+            get { return _background; }
+            set { _background = value; }
         }
 
         public Drawing(Color background) 
