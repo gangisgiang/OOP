@@ -14,6 +14,15 @@ public class PlayerTest
     }
 
     [Test]
+    public void IdentifiablePlayer()
+    {
+        Assert.IsTrue(_player.AreYou("me"));
+        Assert.IsTrue(_player.AreYou("inventory"));
+        Assert.IsFalse(_player.AreYou("name"));
+        Assert.IsFalse(_player.AreYou("desc"));
+    }
+
+    [Test]
     public void LocateItems()
     {
         _player.Inventory.Put(_item);
@@ -41,5 +50,4 @@ public class PlayerTest
         _player.Inventory.Put(_item);
         Assert.AreEqual("You are me the inventory. You are carrying:\n\ta name (id1)\n\tdesc\n", _player.FullDescription);
     }
-
 }
