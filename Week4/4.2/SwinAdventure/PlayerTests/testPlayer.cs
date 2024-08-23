@@ -6,6 +6,7 @@ public class PlayerTest
 {
     private Player _player;
     private Item _item;
+    
     [SetUp]
     public void Setup()
     {
