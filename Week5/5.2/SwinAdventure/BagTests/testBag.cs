@@ -4,7 +4,7 @@ using SwinAdventure;
 
 public class Tests
 {
-    private Bag _bag;
+    private Bag _bag, b1, b2;
     private Item _item;
 
     [SetUp]
