@@ -57,8 +57,8 @@ public class Tests
     [Test]
     public void PrivilegeItem()
     {
-        b2.Inventory.Put(_item);
+        b1.Inventory.Put(b2);
         b2.PrivilegeEscalation("8510");
-        Assert.IsTrue(b2.Locate("104828510"));
+        Assert.AreEqual(b2, b1.Locate("104828510"));
     }
 }
