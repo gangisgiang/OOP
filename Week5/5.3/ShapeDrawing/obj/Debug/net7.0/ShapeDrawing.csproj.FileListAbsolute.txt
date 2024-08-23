@@ -1,0 +1,15 @@
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.csproj.AssemblyReference.cache
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.AssemblyInfoInputs.cache
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.AssemblyInfo.cs
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.csproj.CoreCompileInputs.cache
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/bin/Debug/net7.0/ShapeDrawing
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/bin/Debug/net7.0/ShapeDrawing.deps.json
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/bin/Debug/net7.0/ShapeDrawing.runtimeconfig.json
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/bin/Debug/net7.0/ShapeDrawing.dll
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/bin/Debug/net7.0/ShapeDrawing.pdb
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.dll
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/refint/ShapeDrawing.dll
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.pdb
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ShapeDrawing.genruntimeconfig.cache
+/Users/guest1/Documents/OOP/Week4/4.1/ShapeDrawing/obj/Debug/net7.0/ref/ShapeDrawing.dll
