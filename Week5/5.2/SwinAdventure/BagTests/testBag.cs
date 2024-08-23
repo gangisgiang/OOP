@@ -12,6 +12,8 @@ public class Tests
     {
         _bag = new Bag(new string[] { "id1", "id2" }, "name", "desc");
         _item = new Item(new string[] { "id1", "id2" }, "name", "desc");
+        b1 = new Bag(new string[] { "id1", "id2"}, "name", "desc");
+        b2 = new Bag(new string[] { "uyen", "giang"}, "name", "desc");
     }
 
     [Test]
@@ -40,5 +42,23 @@ public class Tests
     {
         _bag.Inventory.Put(_item);
         Assert.AreEqual("In the name you can see:\n\ta name (id1)\n\tdesc\n", _bag.FullDescription);
+    }
+
+    [Test]
+    public void BaginBag()
+    {
+        b1.Inventory.Put(b2);
+        Assert.AreEqual(b2, b1.Locate("id1"));
+        Assert.AreEqual(b2, b1.Locate("id2"));
+        Assert.IsNull(b1.Locate("uyen"));
+        Assert.IsNull(b1.Locate("giang"));
+    }
+
+    [Test]
+    public void PrivilegeItem()
+    {
+        b2.Inventory.Put(_item);
+        b2.PrivilegeEscalation("8510");
+        Assert.IsTrue(b2.Locate("104828510"));
     }
 }
