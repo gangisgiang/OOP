@@ -15,7 +15,7 @@ public class Tests
     }
 
     [Test]
-    public void LocateItems()
+    public void LocatesItems()
     {
         _bag.Inventory.Put(_item);
         Assert.AreEqual(_item, _bag.Locate("id1"));
@@ -23,14 +23,14 @@ public class Tests
     }
 
     [Test]
-    public void LocateItself()
+    public void LocatesItself()
     {
         Assert.AreEqual(_bag, _bag.Locate("id1"));
         Assert.AreEqual(_bag, _bag.Locate("id2"));
     }
 
     [Test]
-    public void LocateNothing()
+    public void LocatesNothing()
     {
         Assert.IsNull(_bag.Locate("Giang"));
     }
