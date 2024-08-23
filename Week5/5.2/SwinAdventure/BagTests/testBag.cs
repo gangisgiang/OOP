@@ -1,4 +1,6 @@
 ﻿namespace BagTests;
+using NUnit.Framework;
+using SwinAdventure;
 
 public class Tests
 {
