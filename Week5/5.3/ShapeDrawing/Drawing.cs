@@ -79,5 +79,17 @@ namespace ShapeDrawing
         {
             _shapes.Remove(s);
         }
+
+        public Method Save(string filename)
+        {
+            StreamWriter writer = new StreamWriter(filename);
+            writer.WriteColor(_background);
+            writer.WriteLine(_shapes.Count);
+            foreach (Shape s in _shapes)
+            {
+                writer.SaveTo(s);
+            }
+            writer.Close();
+        }
     }
 }
