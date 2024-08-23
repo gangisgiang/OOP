@@ -1,15 +1,18 @@
 using System;
+using SwinAdventure;
+
 namespace SwinAdventure
 {
-	public class Bag : Item
-	{
-        public Inverntory _inventory;
-		public Bag(string[] ids, string name, string desc) : base(ids, name, desc)
+    public class Bag : Item
+    {
+        public Inventory _inventory;
+
+        public Bag(string[] ids, string name, string desc) : base(ids, name, desc)
         {
             _inventory = new Inventory();
         }
 
-        public GameObject Locate(string id) 
+        public GameObject Locate(string id)
         {
             if (AreYou(id))
             {
@@ -21,11 +24,11 @@ namespace SwinAdventure
             }
         }
 
-        public FullDescription
+        public string FullDescription
         {
             get
             {
-                return "In the " + Name + " you can see:\n" + _inventory.ItemList;
+                return ("In the " + Name + " you can see:\n" + _inventory.ItemList);
             }
         }
 
@@ -38,4 +41,3 @@ namespace SwinAdventure
         }
 	}
 }
-
