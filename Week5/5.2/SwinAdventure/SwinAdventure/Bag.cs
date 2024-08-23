@@ -14,14 +14,16 @@ namespace SwinAdventure
 
         public GameObject Locate(string id)
         {
+            GameObject item = _inventory.Fetch(id);
+            if (item != null)
+            {
+                return item;
+            }
             if (AreYou(id))
             {
                 return this;
             }
-            else
-            {
-                return _inventory.Fetch(id);
-            }
+            return null;
         }
 
         public string FullDescription
