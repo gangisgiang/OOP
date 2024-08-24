@@ -1,6 +1,7 @@
 ﻿using ShapeDrawing;
 using MyGame;
 using SplashKitSDK;
+using System.Reflection.PortableExecutable;
 
 namespace ShapeDrawing
 {
@@ -81,16 +82,65 @@ namespace ShapeDrawing
             _shapes.Remove(s);
         }
 
-        public Method Save(string filename)
+        public void Save(string filename)
         {
             StreamWriter writer = new StreamWriter(filename);
-            writer.WriteColor(_background);
-            writer.WriteLine(_shapes.Count);
-            foreach (Shape s in _shapes)
+
+            try
             {
-                writer.SaveTo(s);
+                writer.WriteColor(_background);
+                writer.WriteLine(_shapes.Count);
+                foreach (Shape s in _shapes)
+                {
+                    s.SaveTo(writer);
+                }
             }
-            writer.Close();
+
+            finally
+            {
+                writer.Close();
+            }
+        }
+
+        public void Load(string filename)
+        {
+            StreamReader reader = new StreamReader(filename);
+
+            try
+            {
+                Background = reader.ReadColor();
+                int count = reader.ReadInteger();
+                _shapes.Clear();
+
+                for (int i = 0; i < count; i++)
+                {
+                    Shape s = null;
+                    string kind = reader.ReadLine();
+
+                    switch (kind)
+                    {
+                        case "Rectangle":
+                            s = new MyRectangle();
+                            break;
+                        case "Circle":
+                            s = new MyCircle();
+                            break;
+                        case "Line":
+                            s = new MyLine();
+                            break;
+                        default:
+                            throw new InvalidCastException("Unknow shape kind: " + kind);
+                    }
+
+                    s.LoadFrom(reader);
+                    AddShape(s);
+                }
+            }
+
+            finally
+            {
+                reader.Close();
+            }
         }
     }
 }

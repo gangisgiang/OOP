@@ -1,4 +1,5 @@
-﻿using SplashKitSDK;
+﻿using MyGame;
+using SplashKitSDK;
 
 namespace ShapeDrawing
 {
@@ -51,10 +52,18 @@ namespace ShapeDrawing
 
         public virtual void SaveTo(StreamWriter writer)
         {
-            writer.WriteLine(_color.ToArgb());
+            writer.WriteLine(_color.R);
+            writer.WriteLine(_color.G);
+            writer.WriteLine(_color.B);
             writer.WriteLine(_x);
             writer.WriteLine(_y);
-            writer.WriteLine("5");
+        }
+
+        public virtual void LoadFrom(StreamReader reader)
+        {
+            Color = reader.ReadColor();
+            X = reader.ReadInteger();
+            Y = reader.ReadInteger();
         }
     }
 }

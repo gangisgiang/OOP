@@ -1,4 +1,6 @@
 ﻿using System;
+using MyGame;
+using ShapeDrawing;
 using SplashKitSDK;
 
 namespace ShapeDrawing
@@ -49,10 +51,13 @@ namespace ShapeDrawing
         {
             writer.WriteLine("Circle");
             base.SaveTo(writer);
-            writer.WriteLine(_color.ToArgb());
-            writer.WriteLine(_x);
-            writer.WriteLine(_y);
             writer.WriteLine(_radius);
+        }
+
+        public override void LoadFrom(StreamReader reader)
+        {
+            base.LoadFrom(reader);
+            Radius = reader.ReadInteger();
         }
     }
 }

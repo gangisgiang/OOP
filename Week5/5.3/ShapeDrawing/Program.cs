@@ -41,6 +41,23 @@ namespace ShapeDrawing
                     kindToAdd = ShapeKind.Line;
                 }
 
+                if (SplashKit.KeyTyped(KeyCode.SKey))
+                {
+                    myDrawing.Save("/Users/guest1/Documents/TestDrawing.txt");
+                }
+
+                if (SplashKit.KeyTyped(KeyCode.OKey))
+                {
+                    try
+                    {
+                        myDrawing.Load("/Users/guest1/Documents/TestDrawing.txt");
+                    }
+                    catch (Exception e)
+                    {
+                        Console.Error.WriteLine("Error loading file: {0}", e.Message);
+                    }
+                }
+
                 if (SplashKit.MouseClicked(MouseButton.LeftButton))
                 {
                     Shape newShape = null;
@@ -74,11 +91,6 @@ namespace ShapeDrawing
                         newShape.X = SplashKit.MouseX();
                         newShape.Y = SplashKit.MouseY();
                         myDrawing.AddShape(newShape);
-                    }
-
-                    if (SplashKit.KeyTyped(KeyCode.SKey))
-                    {
-                        myDrawing.Save("/Users/guest1/Documents/OOP/Week5/5.3/ShapeDrawing/TestDrawing.txt");
                     }
                 }
 

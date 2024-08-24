@@ -1,4 +1,6 @@
 ﻿using System;
+using MyGame;
+using ShapeDrawing;
 using SplashKitSDK;
 
 namespace ShapeDrawing
@@ -59,11 +61,16 @@ namespace ShapeDrawing
         public override void SaveTo(StreamWriter writer)
         {
             writer.WriteLine("Line");
-            writer.WriteLine(_color.ToArgb());
-            writer.WriteLine(X);
-            writer.WriteLine(Y);
+            base.SaveTo(writer);
             writer.WriteLine(_endX);
             writer.WriteLine(_endY);
+        }
+
+        public override void LoadFrom(StreamReader reader)
+        {
+            base.LoadFrom(reader);
+            EndX = reader.ReadInteger();
+            EndY = reader.ReadInteger();
         }
     }
 }
