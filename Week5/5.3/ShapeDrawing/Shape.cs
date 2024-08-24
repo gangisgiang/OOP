@@ -51,10 +51,9 @@ namespace ShapeDrawing
 
         public virtual void SaveTo(StreamWriter writer)
         {
-            writer.WriteColor(_color);
+            writer.WriteLine(_color.ToArgb());
             writer.WriteLine(_x);
             writer.WriteLine(_y);
-            writer.WriteLine(_selected);
         }
     }
 }
