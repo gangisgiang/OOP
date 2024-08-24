@@ -75,6 +75,11 @@ namespace ShapeDrawing
                         newShape.Y = SplashKit.MouseY();
                         myDrawing.AddShape(newShape);
                     }
+
+                    if (SplashKit.KeyTyped(KeyCode.SKey))
+                    {
+                        myDrawing.Save("/Users/guest1/Documents/OOP/Week5/5.3/ShapeDrawing/TestDrawing.txt");
+                    }
                 }
 
                 if (SplashKit.MouseClicked(MouseButton.RightButton))
