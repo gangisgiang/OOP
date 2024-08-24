@@ -48,6 +48,14 @@ namespace ShapeDrawing
         public abstract void DrawOutline();
 
         public abstract bool IsAt(Point2D pt);
+
+        public virtual void SaveTo(StreamWriter writer)
+        {
+            writer.WriteColor(_color);
+            writer.WriteLine(_x);
+            writer.WriteLine(_y);
+            writer.WriteLine(_selected);
+        }
     }
 }
 
