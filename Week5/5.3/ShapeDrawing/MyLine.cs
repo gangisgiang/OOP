@@ -55,5 +55,15 @@ namespace ShapeDrawing
             Line line = SplashKit.LineFrom(X, Y, _endX, _endY);
             return SplashKit.PointOnLine(pt, line);
         }
+
+        public override void SaveTo(StreamWriter writer)
+        {
+            writer.WriteColor(_color);
+            writer.WriteLine(X);
+            writer.WriteLine(Y);
+            writer.WriteLine(_endX);
+            writer.WriteLine(_endY);
+            writer.WriteLine(_selected);
+        }
     }
 }

@@ -55,6 +55,17 @@ namespace ShapeDrawing
             return (pt.X >= _x && pt.X <= _x + _width)
                 && (pt.Y >= _y && pt.Y <= _y + _height);
         }
+
+        public override void SaveTo(StreamWriter writer)
+        {
+            writer.WriteLine("Rectangle");
+            base.SaveTo(writer);
+            writer.WriteLine(_color);
+            writer.WriteLine(_x);
+            writer.WriteLine(_y);
+            writer.WriteLine(_width);
+            writer.WriteLine(_height);
+        }
     }
 }
 

@@ -44,6 +44,15 @@ namespace ShapeDrawing
         {
             return SplashKit.PointInCircle(pt.X, pt.Y, _x, _y, _radius);
         }
+
+        public override void SaveTo(StreamWriter writer)
+        {
+            writer.WriteColor(_color);
+            writer.WriteLine(_x);
+            writer.WriteLine(_y);
+            writer.WriteLine(_radius);
+            writer.WriteLine(_selected);
+        }
     }
 }
     
