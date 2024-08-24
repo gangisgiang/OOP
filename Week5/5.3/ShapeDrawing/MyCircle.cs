@@ -47,11 +47,12 @@ namespace ShapeDrawing
 
         public override void SaveTo(StreamWriter writer)
         {
-            writer.WriteColor(_color);
+            writer.WriteLine("Circle");
+            base.SaveTo(writer);
+            writer.WriteLine(_color.ToArgb());
             writer.WriteLine(_x);
             writer.WriteLine(_y);
             writer.WriteLine(_radius);
-            writer.WriteLine(_selected);
         }
     }
 }

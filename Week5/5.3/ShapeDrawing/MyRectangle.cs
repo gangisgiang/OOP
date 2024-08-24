@@ -60,7 +60,7 @@ namespace ShapeDrawing
         {
             writer.WriteLine("Rectangle");
             base.SaveTo(writer);
-            writer.WriteLine(_color);
+            writer.WriteLine(_color.ToArgb());
             writer.WriteLine(_x);
             writer.WriteLine(_y);
             writer.WriteLine(_width);

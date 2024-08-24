@@ -54,6 +54,7 @@ namespace ShapeDrawing
             writer.WriteLine(_color.ToArgb());
             writer.WriteLine(_x);
             writer.WriteLine(_y);
+            writer.WriteLine("5");
         }
     }
 }

@@ -58,12 +58,12 @@ namespace ShapeDrawing
 
         public override void SaveTo(StreamWriter writer)
         {
-            writer.WriteColor(_color);
+            writer.WriteLine("Line");
+            writer.WriteLine(_color.ToArgb());
             writer.WriteLine(X);
             writer.WriteLine(Y);
             writer.WriteLine(_endX);
             writer.WriteLine(_endY);
-            writer.WriteLine(_selected);
         }
     }
 }
