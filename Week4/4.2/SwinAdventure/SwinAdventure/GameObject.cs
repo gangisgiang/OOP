@@ -1,7 +1,7 @@
 using System;
 namespace SwinAdventure
 {
-	public class GameObject : IdentifiableObject
+	public abstract class GameObject : IdentifiableObject
 	{
         public string _description;
         public string _name;
