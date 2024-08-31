@@ -3,7 +3,7 @@ using SwinAdventure;
 
 namespace SwinAdventure
 {
-    public class Bag : Item
+    public class Bag : Item, IHaveInventory
     {
         public Inventory _inventory;
 
