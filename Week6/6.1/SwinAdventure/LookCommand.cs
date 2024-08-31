@@ -11,7 +11,7 @@ namespace SwinAdventure
         {
             if (text.Length != 3 && text.Length != 5)
             {
-                return "I don’t know how to look like that";
+                return "I don't know how to look like that";
             }
 
             if (text[0] != "look")
@@ -30,6 +30,7 @@ namespace SwinAdventure
             }
 
             IHaveInventory container = null;
+
             if (text.Length == 3)
             {
                 container = p;
@@ -46,7 +47,20 @@ namespace SwinAdventure
             return LookAtIn(text[2], container);
         }
 
+        private IHaveInventory FetchContainer(Player p, string containerId)
+        {
+            return p.Locate(containerId) as IHaveInventory;
+        }
 
+        private string LookAtIn(string thingId, IHaveInventory container)
+        {
+            GameObject item = container.Locate(thingId);
+            if (item == null)
+            {
+                return "I cannot find the " + thingId;
+            }
+            return item.FullDescription;
+        }
 	}
 }
 
