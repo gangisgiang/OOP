@@ -24,9 +24,7 @@
 
             Item item3 = new Item(new string[] { "coin" }, "coin", "a shiny coin");
             bag.Inventory.Put(item3);
-
-            // Loop reading commands from the user, and getting the look command to execute them
-
+            
             LookCommand look = new LookCommand();
             string command = "";
             while (command != "quit")
