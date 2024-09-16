@@ -10,4 +10,3 @@ namespace SwinAdventure
         public abstract string Execute(Player p, string[] text);
 	}
 }
-

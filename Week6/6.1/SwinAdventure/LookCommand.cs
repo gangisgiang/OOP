@@ -47,12 +47,12 @@ namespace SwinAdventure
             return LookAtIn(text[2], container);
         }
 
-        private IHaveInventory FetchContainer(Player p, string containerId)
+        public IHaveInventory FetchContainer(Player p, string containedId)
         {
-            return p.Locate(containerId) as IHaveInventory;
+            return p.Locate(containedId) as IHaveInventory;
         }
 
-        private string LookAtIn(string thingId, IHaveInventory container)
+        public string LookAtIn(string thingId, IHaveInventory container)
         {
             GameObject item = container.Locate(thingId);
             if (item == null)
@@ -63,4 +63,3 @@ namespace SwinAdventure
         }
 	}
 }
-
