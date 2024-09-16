@@ -12,32 +12,35 @@
 
             Player player = new Player(name, desc);
 
-            Console.WriteLine("You are " + player.Name + " " + player.Description);
-
-            Item item1 = new Item(new string[] { "sword" }, "sword", "a sharp sword");
+            Item item1 = new Item(new string[] { "sword" }, "sword", "sharp sword");
             player.Inventory.Put(item1);
-            item item2 = new Item(new string[] { "shield" }, "shield", "a strong shield");
+            Item item2 = new Item(new string[] { "shield" }, "shield", "strong shield");
             player.Inventory.Put(item2);
 
-            Bag bag = new Bag(new string[] { "bag" }, "bag", "a green bag");
+            Bag bag = new Bag(new string[] { "bag" }, "bag", "green bag");
             player.Inventory.Put(bag);
 
-            Item item3 = new Item(new string[] { "coin" }, "coin", "a shiny coin");
+            Item item3 = new Item(new string[] { "coin" }, "coin", "shiny coin");
             bag.Inventory.Put(item3);
 
             LookCommand look = new LookCommand();
-            string command = "";
-            while (command != "quit")
+
+            while (true)
             {
-                Console.WriteLine("Enter a command: ");
-                command = Console.ReadLine();
+                Console.Write("\nEnter command: ");
+                string command = Console.ReadLine();
                 string[] parts = command.Split(' ');
+
+                if (parts[0] == "quit")
+                {
+                    Console.WriteLine("Goodbye!");
+                    break;
+                }
+
                 string result = look.Execute(player, parts);
                 Console.WriteLine(result);
             }
 
-            Console.WriteLine("Goodbye!");
-            
         }
     }
 }
