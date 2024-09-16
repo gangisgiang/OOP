@@ -24,7 +24,7 @@
 
             Item item3 = new Item(new string[] { "coin" }, "coin", "a shiny coin");
             bag.Inventory.Put(item3);
-            
+
             LookCommand look = new LookCommand();
             string command = "";
             while (command != "quit")
@@ -37,6 +37,7 @@
             }
 
             Console.WriteLine("Goodbye!");
+            
         }
     }
 }
