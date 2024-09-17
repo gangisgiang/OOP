@@ -36,7 +36,7 @@ namespace SwinAdventure
         {
             get
             {
-                return "This is a " + _description;
+                return "This is " + _description;
             }
         }
     }

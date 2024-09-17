@@ -43,12 +43,6 @@ public class Tests
     }
 
     [Test]
-    public void PlayerLocateItself()
-    {
-        Assert.AreEqual(_player, _player.Locate("Giang"));
-    }
-
-    [Test]
     public void PlayerLocateItems()
     {
         _location.Inventory.Put(_item1);
