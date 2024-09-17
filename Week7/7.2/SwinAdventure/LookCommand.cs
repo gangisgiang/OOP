@@ -21,7 +21,7 @@ namespace SwinAdventure
 
             if (text.Length == 1)
             {
-                return p.FullDescription;
+                return p.Location.FullDescription;
             }
 
             if (text[1] != "at")
