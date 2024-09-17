@@ -1,7 +1,7 @@
 using System;
 namespace SwinAdventure
 {
-	public class Location : IdentifiableObject, IHaveInventory
+	public class Location : GameObject, IHaveInventory
     {
         private Inventory _inventory = new Inventory();
         private string _description;
