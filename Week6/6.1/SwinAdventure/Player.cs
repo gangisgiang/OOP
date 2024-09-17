@@ -41,7 +41,5 @@ namespace SwinAdventure
                 return result;
             }
         }
-
-        public Location Location { get; set; }
     }
 }
