@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace SwinAdventure
 {
     public class LookCommand : Command
@@ -49,12 +49,7 @@ namespace SwinAdventure
 
         public IHaveInventory FetchContainer(Player p, string containedId)
         {
-            GameObject container = p.Locate(containedId);
-            if (container is IHaveInventory inventory)
-            {
-                return inventory;
-            }
-            return null;
+            return p.Locate(containedId) as IHaveInventory;
         }
 
         public string LookAtIn(string thingId, IHaveInventory container)
@@ -68,3 +63,4 @@ namespace SwinAdventure
         }
     }
 }
+
