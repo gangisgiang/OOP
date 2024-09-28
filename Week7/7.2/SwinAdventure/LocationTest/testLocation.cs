@@ -10,7 +10,7 @@ public class Tests
     public void Setup()
     {
         _location = new Location(new string[] { "location" }, "mylocation", "a location");
-        _player = new Player("Giang", "inventory");
+        _player = new Player;
         _item1 = new Item(new string[] { "item1" }, "item1", "first item");
         _item2 = new Item(new string[] { "item2" }, "item2", "second item");
     }
@@ -52,6 +52,11 @@ public class Tests
         Assert.AreEqual(_item2, _player.Locate("item2"));
     }
 
+    [Test]
+    public void PlayerLocateNothing()
+    {
+        Assert.IsNull(_player.Locate("nothing"));
+    }
 
     [Test]
     public void LocationFullDescription()
