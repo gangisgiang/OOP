@@ -7,35 +7,35 @@ namespace SwinAdventure
 {
     public class MoveCommand : Command
     {
-        public MoveCommand() : base(new string[] { "move", "go", "head", "leave" })
-        {
+        public MoveCommand() : base(new string[] { "move", "go", "head", "leave" }) 
+        {         
+            
         }
 
         public override string Execute(Player p, string[] text)
         {
             if (text.Length != 2)
             {
-                return "I don't know how to move like that";
+                return "I don't know how to move there";
             }
 
-            if (text[0] != "move")
+            if (p.Location.Locate(text[1]) is Path)
             {
-                return "Error in move input";
+                Path path = p.Location.Locate(text[1]) as Path;
+                if (path.IsLocked)
+                {
+                    return "The path is locked";
+                }
+                else
+                {
+                    p.Location = path.Destination;
+                    return "You have moved to " + path.Destination.Name;
+                }
             }
-
-            Path path = p.Locate(text[1]) as Path;
-            if (path == null)
+            else
             {
-                return "I cannot find the " + text[1];
+                return "I don't know how to move there";
             }
-
-            if (path.IsLocked)
-            {
-                return "The path is locked";
-            }
-
-            p.Location = path.Destination;
-            return "You have moved to " + path.Destination.Name;
         }
     }
 }
