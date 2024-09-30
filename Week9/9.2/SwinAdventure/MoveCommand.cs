@@ -9,7 +9,7 @@ namespace SwinAdventure
     {
         public MoveCommand() : base(new string[] { "move", "go", "head", "leave" }) 
         {         
-            
+
         }
 
         public override string Execute(Player p, string[] text)

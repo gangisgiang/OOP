@@ -18,16 +18,29 @@ namespace SwinAdventure
             }
         }
 
+        public Location Location { get; set; }
+
         public GameObject Locate(string id)
         {
             if (AreYou(id))
             {
                 return this;
             }
-            else
+
+            if (_inventory.Fetch(id) != null) 
             {
                 return _inventory.Fetch(id);
             }
+
+            if (Location.Locate(id) != null)
+            {
+                return Location.Locate(id);
+            }
+        }
+
+        public void Move(Path path)
+        {
+            Location = path.Destination;
         }
 
         public override string FullDescription

@@ -8,10 +8,13 @@ namespace SwinAdventure
     public class Path : IdentifiableObject
     {
         private Location _destination;
+        private string _direction;
         public bool IsLocked { get; set; }
-        public Path(string name, string desc, Location destination) : base(new string[] { "path" }, name, desc)
+        
+        public Path(string[] ids, string name, string desc, Location destination, string direction) : base(ids, name, desc)
         {
             _destination = destination;
+            _direction = direction;
             IsLocked = false;
         }
 
@@ -23,11 +26,11 @@ namespace SwinAdventure
             }
         }
 
-        public override string FullDescription
+        public string Direction
         {
             get
             {
-                return "This path leads to " + _destination.Name;
+                return _direction;
             }
         }
     }
