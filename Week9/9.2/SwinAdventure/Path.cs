@@ -1,31 +1,45 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using SwinAdventure;
 
 namespace SwinAdventure
 {
-    public class Path : IdentifiableObject
+    public class Bag : Item, IHaveInventory
     {
-        private Location _destination;
-        
-        public Path(string[] ids, string desc, Location destination) : base(ids)
+        public Inventory _inventory;
+
+        public Bag(string[] ids, string name, string desc) : base(ids, name, desc)
         {
-            _destination = destination;
-            Description = desc;
+            _inventory = new Inventory();
         }
 
-        public Location Destination
+        public GameObject Locate(string id)
+        {
+            GameObject item = _inventory.Fetch(id);
+            if (item != null)
+            {
+                return item;
+            }
+            if (AreYou(id))
+            {
+                return this;
+            }
+            return null;
+        }
+
+        public string FullDescription
         {
             get
             {
-                return _destination;
+                return ("In the " + Name + " you can see:\n" + _inventory.ItemList);
             }
         }
 
-        public string Description 
-        { 
-            get;
+        public Inventory Inventory
+        {
+            get
+            {
+                return _inventory;
+            }
         }
-    }
+	}
 }

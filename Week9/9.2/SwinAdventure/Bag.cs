@@ -19,10 +19,12 @@ namespace SwinAdventure
             {
                 return item;
             }
+
             if (AreYou(id))
             {
                 return this;
             }
+            
             return null;
         }
 
