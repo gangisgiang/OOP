@@ -14,28 +14,29 @@ namespace SwinAdventure
 
         public override string Execute(Player p, string[] text)
         {
-            if (text.Length != 2)
+            if (text.Length > 2)
             {
                 return "I don't know how to move there";
             }
 
-            if (p.Location.Locate(text[1]) is Path)
+            if (text.Length < 2) 
             {
-                Path path = p.Location.Locate(text[1]) as Path;
-                if (path.IsLocked)
-                {
-                    return "The path is locked";
-                }
-                else
-                {
-                    p.Location = path.Destination;
-                    return "You have moved to " + path.Destination.Name;
-                }
+                return "Where do you want to move?";
             }
-            else
+
+            string direction = text[1].ToLower();
+            Path path = p.Location.Locate(direction) as Path;
+
+            if (path == null)
             {
                 return "I don't know how to move there";
             }
+
+            p.Location = path.Destination;
+
+            return "You head " + direction + "\n" + p.Location.Description + "\n" + "You have arrived at " + p.Location.Name;
         }
     }
 }
+
+

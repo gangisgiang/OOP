@@ -1,9 +1,14 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
 namespace SwinAdventure
 {
 	public class Location : GameObject, IHaveInventory
     {
         private Inventory _inventory = new Inventory();
+        private List<Path> _paths = new List<Path>();
         private string _description;
         private string _name;
 
@@ -52,7 +57,20 @@ namespace SwinAdventure
                 return this;
             }
 
+            foreach (Path path in _paths)
+            {
+                if (path.AreYou(id))
+                {
+                    return path;
+                }
+            }
+
             return _inventory.Fetch(id);       
+        }
+
+        public void Put(Path path)
+        {
+            _paths.Add(path);
         }
     }
 }

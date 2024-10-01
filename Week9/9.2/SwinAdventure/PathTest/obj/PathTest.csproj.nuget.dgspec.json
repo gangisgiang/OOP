@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/PathTest/PathTest.csproj": {}
+  },
+  "projects": {
+    "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
+        "projectName": "SwinAdventure",
+        "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
+        "packagesPath": "/Users/guest1/.nuget/packages/",
+        "outputPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guest1/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[2.5.7.10213, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/PathTest/PathTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/PathTest/PathTest.csproj",
+        "projectName": "PathTest",
+        "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/PathTest/PathTest.csproj",
+        "packagesPath": "/Users/guest1/.nuget/packages/",
+        "outputPath": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/PathTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guest1/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj": {
+                "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj"
+              },
+              "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/SwinAdventure.csproj": {
+                "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/SwinAdventure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.14.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/SwinAdventure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/SwinAdventure.csproj",
+        "projectName": "SwinAdventure",
+        "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/SwinAdventure.csproj",
+        "packagesPath": "/Users/guest1/.nuget/packages/",
+        "outputPath": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/guest1/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

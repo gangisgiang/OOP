@@ -40,7 +40,6 @@
                 string result = look.Execute(player, parts);
                 Console.WriteLine(result);
             }
-
         }
     }
 }

@@ -1,8 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "cCfKaKLhmQ8vtst/2W9T0m9u5mH3mvcCEdrHfCt4W6Yp4laBupjvX6T6WVfU+5/4s3pwwyv/a/ULw+0tXS+71A==",
+  "dgSpecHash": "3R6sMXPxg4Q=",
   "success": true,
-  "projectFilePath": "/Users/guest1/Documents/OOP/Week2/2.4/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "projectFilePath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
+  "expectedPackageFiles": [
+    "/Users/guest1/.nuget/packages/nunit/2.5.7.10213/nunit.2.5.7.10213.nupkg.sha512",
+    "/Users/guest1/.nuget/packages/nunit3testadapter/4.6.0/nunit3testadapter.4.6.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NUnit 2.5.7.10213' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

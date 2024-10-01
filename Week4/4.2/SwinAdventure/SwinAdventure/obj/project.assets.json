@@ -1,11 +1,126 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "NUnit/2.5.7.10213": {
+        "type": "package",
+        "compile": {
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.mocks.dll": {},
+          "lib/pnunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/nunit.framework.dll": {},
+          "lib/nunit.mocks.dll": {},
+          "lib/pnunit.framework.dll": {}
+        }
+      },
+      "NUnit3TestAdapter/4.6.0": {
+        "type": "package",
+        "build": {
+          "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NUnit/2.5.7.10213": {
+      "sha512": "4aEVHJ3K6SRvmnUn630f6LMy6wfM5tZyMhSSAcMrOs2EspiwI0wsGtTQkFWizqjhNsO+fn0I/ravWZAAVfXpqg==",
+      "type": "package",
+      "path": "nunit/2.5.7.10213",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.ico",
+        "NUnitFitTests.html",
+        "Tools/NUnitFitTests.html",
+        "Tools/NUnitTests.config",
+        "Tools/NUnitTests.nunit",
+        "Tools/agent.conf",
+        "Tools/agent.log.conf",
+        "Tools/launcher.log.conf",
+        "Tools/lib/Failure.png",
+        "Tools/lib/Ignored.png",
+        "Tools/lib/Inconclusive.png",
+        "Tools/lib/Skipped.png",
+        "Tools/lib/Success.png",
+        "Tools/lib/fit.dll",
+        "Tools/lib/log4net.dll",
+        "Tools/lib/nunit-console-runner.dll",
+        "Tools/lib/nunit-gui-runner.dll",
+        "Tools/lib/nunit.core.dll",
+        "Tools/lib/nunit.core.interfaces.dll",
+        "Tools/lib/nunit.fixtures.dll",
+        "Tools/lib/nunit.uiexception.dll",
+        "Tools/lib/nunit.uikit.dll",
+        "Tools/lib/nunit.util.dll",
+        "Tools/nunit-agent-x86.exe",
+        "Tools/nunit-agent-x86.exe.config",
+        "Tools/nunit-agent.exe",
+        "Tools/nunit-agent.exe.config",
+        "Tools/nunit-console-x86.exe",
+        "Tools/nunit-console-x86.exe.config",
+        "Tools/nunit-console.exe",
+        "Tools/nunit-console.exe.config",
+        "Tools/nunit-x86.exe",
+        "Tools/nunit-x86.exe.config",
+        "Tools/nunit.exe",
+        "Tools/nunit.exe.config",
+        "Tools/nunit.framework.dll",
+        "Tools/pnunit-agent.exe",
+        "Tools/pnunit-agent.exe.config",
+        "Tools/pnunit-launcher.exe",
+        "Tools/pnunit-launcher.exe.config",
+        "Tools/pnunit.framework.dll",
+        "Tools/pnunit.tests.dll",
+        "Tools/runFile.exe",
+        "Tools/runFile.exe.config",
+        "Tools/runpnunit.bat",
+        "Tools/test.conf",
+        "fit-license.txt",
+        "lib/nunit.framework.dll",
+        "lib/nunit.framework.xml",
+        "lib/nunit.mocks.dll",
+        "lib/pnunit.framework.dll",
+        "license.txt",
+        "nunit.2.5.7.10213.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "NUnit3TestAdapter/4.6.0": {
+      "sha512": "R7e1+a4vuV/YS+ItfL7f//rG+JBvVeVLX4mHzFEZo4W1qEKl8Zz27AqvQSAqo+BtIzUCo4aAJMYa56VXS4hudw==",
+      "type": "package",
+      "path": "nunit3testadapter/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net462/NUnit3.TestAdapter.dll",
+        "build/net462/NUnit3.TestAdapter.pdb",
+        "build/net462/NUnit3TestAdapter.props",
+        "build/net462/nunit.engine.api.dll",
+        "build/net462/nunit.engine.core.dll",
+        "build/net462/nunit.engine.dll",
+        "build/net462/testcentric.engine.metadata.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.dll",
+        "build/netcoreapp3.1/NUnit3.TestAdapter.pdb",
+        "build/netcoreapp3.1/NUnit3TestAdapter.props",
+        "build/netcoreapp3.1/nunit.engine.api.dll",
+        "build/netcoreapp3.1/nunit.engine.core.dll",
+        "build/netcoreapp3.1/nunit.engine.dll",
+        "build/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "docs/README.md",
+        "nunit3testadapter.4.6.0.nupkg.sha512",
+        "nunit3testadapter.nuspec",
+        "nunit_256.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "NUnit >= 2.5.7.10213",
+      "NUnit3TestAdapter >= 4.6.0"
+    ]
   },
   "packageFolders": {
     "/Users/guest1/.nuget/packages/": {}
@@ -13,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/guest1/Documents/OOP/Week2/2.4/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
+      "projectUniqueName": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
       "projectName": "SwinAdventure",
-      "projectPath": "/Users/guest1/Documents/OOP/Week2/2.4/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
+      "projectPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/SwinAdventure.csproj",
       "packagesPath": "/Users/guest1/.nuget/packages/",
-      "outputPath": "/Users/guest1/Documents/OOP/Week2/2.4/SwinAdventure/SwinAdventure/obj/",
+      "outputPath": "/Users/guest1/Documents/GitHub/OOP/Week4/4.2/SwinAdventure/SwinAdventure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/guest1/.nuget/NuGet/NuGet.Config"
@@ -26,6 +141,7 @@
         "net7.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -38,11 +154,26 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[2.5.7.10213, )"
+          },
+          "NUnit3TestAdapter": {
+            "target": "Package",
+            "version": "[4.6.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -59,8 +190,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NUnit 2.5.7.10213' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

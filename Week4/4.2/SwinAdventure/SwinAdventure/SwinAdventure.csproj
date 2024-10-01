@@ -10,4 +10,9 @@
     <ItemGroup>
       <ProjectReference Include="..\SwinAdventureTest\SwinAdventureTest.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NUnit" Version="2.5.7.10213" />
+      <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+    </ItemGroup>
 </Project>
