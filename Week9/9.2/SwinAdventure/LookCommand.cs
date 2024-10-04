@@ -49,6 +49,17 @@ namespace SwinAdventure
                 }
             }
 
+            if (container is Location)
+            {
+                Location loc = container as Location;
+                string paths = "";
+                foreach (Path path in loc.Paths)
+                {
+                    paths += path.Description + "\n";
+                }
+                return loc.FullDescription + paths;
+            }
+
             return LookAtIn(text[2], container);
         }
 
