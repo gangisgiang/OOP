@@ -1,0 +1,4 @@
+/Users/guest1/Documents/OOP/Test/SwinAdventure/SwinAdventure/obj/Debug/net8.0/SwinAdventure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guest1/Documents/OOP/Test/SwinAdventure/SwinAdventure/obj/Debug/net8.0/SwinAdventure.AssemblyInfoInputs.cache
+/Users/guest1/Documents/OOP/Test/SwinAdventure/SwinAdventure/obj/Debug/net8.0/SwinAdventure.AssemblyInfo.cs
+/Users/guest1/Documents/OOP/Test/SwinAdventure/SwinAdventure/obj/Debug/net8.0/SwinAdventure.csproj.CoreCompileInputs.cache
