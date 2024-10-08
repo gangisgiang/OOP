@@ -6,19 +6,19 @@ namespace SwinAdventure
     {
         static void Main(string[] args)
         {
-            Location bedroom = new Location(new string[] { "bedroom" }, "Bedroom", "A big, gorgeous bedroom.");
-            Location closet = new Location(new string[] { "closet" }, "Closet", "A small, dark closet with an odd smell.");
-            Location kitchen = new Location(new string[] { "kitchen" }, "Kitchen", "A spacious kitchen with an assortment of cooking utensils.");
+            Location bedroom = new Location(new string[] { "bedroom" }, "Bedroom", "A big, gorgeous bedroom");
+            Location closet = new Location(new string[] { "closet" }, "Closet", "A small, dark closet with an odd smell");
+            Location kitchen = new Location(new string[] { "kitchen" }, "Kitchen", "A spacious kitchen with an assortment of cooking utensils");
 
-            Path hallwayToCloset = new Path(new string[] { "south" }, "A narrow door leading south to the closet.", closet);
-            Path hallwayToKitchen = new Path(new string[] { "east" }, "A wide archway leading east to the kitchen.", kitchen);
-            Path closetToHallway = new Path(new string[] { "north" }, "A door leading north to the hallway.", bedroom);
-            Path kitchenToHallway = new Path(new string[] { "west" }, "An archway leading west to the hallway.", bedroom);
+            Path bedroomToCloset = new Path(new string[] { "south" }, "A narrow door leading south to the closet", closet);
+            Path bedroomToKitchen = new Path(new string[] { "east" }, "A wide archway leading east to the kitchen", kitchen);
+            Path closetToBedroom = new Path(new string[] { "north" }, "A door leading north to the bedroom", bedroom);
+            Path kitchenToBedroom = new Path(new string[] { "west" }, "An archway leading west to the bedroom", bedroom);
 
-            bedroom.AddPath(hallwayToCloset);
-            bedroom.AddPath(hallwayToKitchen);
-            closet.AddPath(closetToHallway);
-            kitchen.AddPath(kitchenToHallway);
+            bedroom.AddPath(bedroomToCloset);
+            bedroom.AddPath(bedroomToKitchen);
+            closet.AddPath(closetToBedroom);
+            kitchen.AddPath(kitchenToBedroom);
 
             Player player = new Player("Giang", "A clumsy girl.", bedroom);
 

@@ -23,6 +23,9 @@
             Item item3 = new Item(new string[] { "coin" }, "coin", "shiny coin");
             bag.Inventory.Put(item3);
 
+            Location location = new Location(new string[] { "Bedroom" }, "a bedroom", "pinky bedroom.");
+            player.Location = location;
+
             LookCommand look = new LookCommand();
 
             while (true)
@@ -36,9 +39,11 @@
                     Console.WriteLine("Goodbye!");
                     break;
                 }
-
-                string result = look.Execute(player, parts);
-                Console.WriteLine(result);
+                else
+                {
+                    string result = look.Execute(player, parts);
+                    Console.WriteLine(result);
+                }  
             }
 
         }
