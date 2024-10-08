@@ -1,0 +1,5 @@
+﻿<Properties StartupConfiguration="{3672BB17-0CB5-48B5-8071-5C794959CEED}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TestPath FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.SwinAdventure PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
