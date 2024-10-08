@@ -73,3 +73,11 @@
 /Users/guest1/Documents/OOP/Week7/7.1/SwinAdventure/obj/Debug/net7.0/SwinAdventure.pdb
 /Users/guest1/Documents/OOP/Week7/7.1/SwinAdventure/obj/Debug/net7.0/SwinAdventure.genruntimeconfig.cache
 /Users/guest1/Documents/OOP/Week7/7.1/SwinAdventure/obj/Debug/net7.0/ref/SwinAdventure.dll
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.AssemblyInfoInputs.cache
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.AssemblyInfo.cs
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.csproj.CoreCompileInputs.cache
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.sourcelink.json
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.dll
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/refint/SwinAdventure.dll
+/Users/guest1/Documents/GitHub/OOP/Week7/7.2/SwinAdventure/obj/Debug/net7.0/SwinAdventure.pdb

@@ -19,9 +19,10 @@ namespace SwinAdventure
                 return "Error in look input";
             }
 
-            if (text.Length == 1)
+            if (text.Length == 1 && text[0].ToLower() == "look")
             {
-                return p.Location.FullDescription;
+                string location = p.Location.FullDescription;
+                return location;
             }
 
             if (text[1] != "at")

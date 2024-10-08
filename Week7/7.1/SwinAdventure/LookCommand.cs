@@ -1,9 +1,9 @@
-using System;
+﻿using System;
 namespace SwinAdventure
 {
-	public class LookCommand : Command
-	{
-		public LookCommand() : base(new string[] { "look"})
+    public class LookCommand : Command
+    {
+        public LookCommand() : base(new string[] { "look" })
         {
         }
 
@@ -61,5 +61,6 @@ namespace SwinAdventure
             }
             return item.FullDescription;
         }
-	}
+    }
 }
+

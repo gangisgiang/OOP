@@ -46,7 +46,10 @@ namespace SwinAdventure
 
             if (_location != null)
             {
-                return _location.Locate(id);
+                if (_location.Locate(id) != null)
+                {
+                    return _location.Locate(id);
+                }
             }
             
             return null;
