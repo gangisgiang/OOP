@@ -41,3 +41,4 @@
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/SwinAdventure/obj/Debug/net7.0/SwinAdventure.pdb
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/SwinAdventure/obj/Debug/net7.0/SwinAdventure.genruntimeconfig.cache
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/SwinAdventure/obj/Debug/net7.0/ref/SwinAdventure.dll
+/Users/guest1/Documents/OOP/Week10/SwinAdventure/SwinAdventure/obj/Debug/net7.0/SwinAdventure.csproj.AssemblyReference.cache

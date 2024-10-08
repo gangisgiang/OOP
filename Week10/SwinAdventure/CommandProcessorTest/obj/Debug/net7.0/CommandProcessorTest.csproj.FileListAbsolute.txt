@@ -96,9 +96,9 @@
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.AssemblyInfoInputs.cache
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.AssemblyInfo.cs
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.csproj.CoreCompileInputs.cache
-/Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandP.BBCE8AF5.Up2Date
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.dll
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/refint/CommandProcessorTest.dll
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.pdb
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.genruntimeconfig.cache
 /Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/ref/CommandProcessorTest.dll
+/Users/guest1/Documents/OOP/Week10/SwinAdventure/CommandProcessorTest/obj/Debug/net7.0/CommandProcessorTest.csproj.CopyComplete

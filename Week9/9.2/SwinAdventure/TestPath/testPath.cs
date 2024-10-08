@@ -41,14 +41,7 @@ public class Tests
     [Test]
     public void TestGetPathFromLocation()
     {
-        var locatedPath = _location.GetPath("south");
-
-        // Ensure that the located path is not null
-        Assert.NotNull(locatedPath, "Path could not be found in the location.");
-
-        // Compare key properties to verify they are logically equal
-        Assert.AreEqual(_path.Description, locatedPath.Description, "The description of the located path does not match.");
-        Assert.AreEqual(_path.Destination, locatedPath.Destination, "The destination of the located path does not match.");
-        Assert.AreEqual(_path.FirstId, locatedPath.FirstId, "The identifier of the located path does not match.");
+        SwinAdventure.Path path = _location.GetPath("south");
+        Assert.That(path, Is.EqualTo(_path));
     }
 }

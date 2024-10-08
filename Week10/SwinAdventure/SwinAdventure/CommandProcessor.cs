@@ -19,21 +19,19 @@ namespace SwinAdventure
             _commands.Add(command);
         }
 
-        public string ExecuteCommand(Player p, string input)
+        public string ExecuteCommand(Player p, string commandString)
         {
-            string[] parts = input.Split(' ');
-            string verb = parts[0];
-            string[] args = parts.Skip(1).ToArray();
+            string[] parts = commandString.Split(' ');
 
             foreach (Command command in _commands)
             {
-                if (command.AreYou(verb))
+                if (command.AreYou(parts[0]))
                 {
-                    return command.Execute(p, args);
+                    return command.Execute(p, parts);
                 }
             }
 
-            return "I don't know how to do that.";
+            return "I don't know how to " + parts[0] + " like that.";
         }
     }
 }

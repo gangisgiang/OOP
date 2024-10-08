@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UHu8f2V4b2o=",
+  "dgSpecHash": "QjyMMNgpRYQ=",
   "success": true,
-  "projectFilePath": "/Users/guest1/Documents/OOP/Week9/SwinAdventure/TestPath/TestPath.csproj",
+  "projectFilePath": "/Users/guest1/Documents/GitHub/OOP/Week9/9.2/SwinAdventure/TestPath/TestPath.csproj",
   "expectedPackageFiles": [
     "/Users/guest1/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/guest1/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",

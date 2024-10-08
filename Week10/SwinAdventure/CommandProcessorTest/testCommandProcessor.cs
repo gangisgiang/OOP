@@ -28,17 +28,48 @@ public class Tests
     }
 
     [Test]
-    public void TestLookCommand()
+    public void TestInvalidPathMoveCommand()
     {
-        string result = _cmdProcessor.ExecuteCommand(_player, "look");
-        Assert.AreEqual("You are in the bedroom. You can see: pinky bedroom", result);
+        string result = _cmdProcessor.ExecuteCommand(_player, "move north");
+        Assert.AreEqual("You can't move in that direction.", result);
     }
 
     [Test]
-    public void TestMoveCommand()
+    public void TestValidPathMoveCommand()
     {
+        Location destination = new Location(new string[] { "Hanoi" }, "Hanoi", "old Hanoi");
+        SwinAdventure.Path path = new SwinAdventure.Path(new string[] { "north" }, "to the north", destination);
+        _location.AddPath(path);
+
         string result = _cmdProcessor.ExecuteCommand(_player, "move north");
-        // You are at " + Name + ". " + ShortDescription + ".\n
+        Assert.AreEqual("You head north\nto the north\nYou have arrived at Hanoi", result);
+    }
+
+    [Test]
+    public void TestInvalidMoveCommand()
+    {
+        string result = _cmdProcessor.ExecuteCommand(_player, "move to north");
+        Assert.AreEqual("I don't understand what you mean by 'move to ...'. Please specify just the direction.", result);
+    }
+
+    [Test]
+    public void TestValidLookCommand()
+    {
+        string result = _cmdProcessor.ExecuteCommand(_player, "look at bedroom");
         Assert.AreEqual("You are at bedroom. pinky bedroom.\n", result);
+    }
+
+    [Test]
+    public void TestInvalidLookCommand()
+    {
+        string result = _cmdProcessor.ExecuteCommand(_player, "look at");
+        Assert.AreEqual("What do you want to look at?", result);
+    }
+
+    [Test]
+    public void TestInvalidCommand()
+    {
+        string result = _cmdProcessor.ExecuteCommand(_player, "command");
+        Assert.AreEqual("I don't know how to command like that.", result);
     }
 }
