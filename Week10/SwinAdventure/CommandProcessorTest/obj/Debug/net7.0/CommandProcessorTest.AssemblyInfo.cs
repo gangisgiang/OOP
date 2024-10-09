@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CommandProcessorTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+089576aaf39d877972f7ebe0ecf383a605278fa4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CommandProcessorTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CommandProcessorTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

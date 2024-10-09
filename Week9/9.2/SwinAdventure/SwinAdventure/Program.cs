@@ -24,7 +24,7 @@ namespace SwinAdventure
 
             MoveCommand moveCommand = new MoveCommand();
 
-            Console.WriteLine("Welcome to SwinAdventure!\n");
+            Console.WriteLine("Welcome to SwinAdventure!");
             Console.WriteLine(player.Location.FullDescription);
 
             while (true)

@@ -31,7 +31,7 @@ namespace SwinAdventure
                 }
             }
 
-            return "I don't know how to " + parts[0] + " like that.";
+            return "Error in command input";
         }
     }
 }
